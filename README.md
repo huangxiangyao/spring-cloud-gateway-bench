@@ -108,17 +108,16 @@ Transfer/sec:      6.21MB
 
 ### RestCloud Gateway bench (8080)
 ```bash
-~% wrk -H "Host: web" -t 10 -c 200 -d 30s http://localhost:8080/restcloud/rest/gateway/hello
-Running 30s test @ http://localhost:8080/restcloud/rest/gateway/hello
+~% wrk -H "Host: web" -t 10 -c 200 -d 30s http://localhost:8080/gateway/bench/hello.txt
+Running 30s test @ http://localhost:8080/gateway/bench/hello.txt
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   406.74ms  517.98ms   2.00s    83.22%
-    Req/Sec    23.73     23.36   330.00     88.55%
-  4788 requests in 30.07s, 1.91MB read
-  Socket errors: connect 0, read 0, write 0, timeout 461
-  Non-2xx or 3xx responses: 4788
-Requests/sec:    159.22
-Transfer/sec:     65.15KB
+    Latency   843.02ms  547.03ms   1.99s    60.46%
+    Req/Sec    15.27     18.24   171.00     93.40%
+  2371 requests in 31.45s, 861.31KB read
+  Socket errors: connect 0, read 0, write 0, timeout 879
+Requests/sec:     75.40
+Transfer/sec:     27.39KB
 ```
 
 ### no proxy bench (8000)
