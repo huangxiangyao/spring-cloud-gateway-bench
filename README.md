@@ -28,10 +28,6 @@ apt-get install maven
 echo 'export JAVA_TOOL_OPTIONS="-Dhttps.protocols=TLSv1.2"' >> ~/.bashrc
 source ~/.bashrc
 ```
-5.wrk
-```
-apt-get install wrk
-```
 
 ## Terminal 1 (simple webserver)
 
@@ -63,7 +59,7 @@ java -jar linkerd-1.3.4.jar linkerd.yaml
 ## Terminal N (wrk)
 
 ### install `wrk`
-Ubuntu: `sudo apt install wrk`
+Ubuntu: `sudo apt-get install wrk`
 
 Mac: `brew install wrk`
 
