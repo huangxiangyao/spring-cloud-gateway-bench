@@ -17,7 +17,7 @@ git clone https://github.com/myvas/spring-cloud-gateway-bench.git
 ```
 2.java
 ```
-apt-get install default-jre
+apt-get install default-jdk
 ```
 3.mvnw
 ```
