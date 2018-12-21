@@ -93,10 +93,10 @@ Requests/sec:  20800.13
 Transfer/sec:      4.09MB
 ```
 
-### linkerd bench (4140)
+### linkerd bench (9990)
 ```bash
-~% wrk -H "Host: web" -t 10 -c 200 -d 30s http://localhost:4140/hello.txt
-Running 30s test @ http://localhost:4140/hello.txt
+~% wrk -H "Host: web" -t 10 -c 200 -d 30s http://localhost:9990/hello.txt
+Running 30s test @ http://localhost:9990/hello.txt
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
     Latency     7.62ms    5.45ms  53.51ms   69.82%
@@ -104,6 +104,21 @@ Running 30s test @ http://localhost:4140/hello.txt
   843418 requests in 30.07s, 186.61MB read
 Requests/sec:  28050.76
 Transfer/sec:      6.21MB
+```
+
+### RestCloud Gateway bench (8080)
+```bash
+~% wrk -H "Host: web" -t 10 -c 200 -d 30s http://localhost:8080/restcloud/rest/gateway/hello
+Running 30s test @ http://localhost:8080/restcloud/rest/gateway/hello
+  10 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     316ms   477.89ms   1.99s    61.79%
+    Req/Sec   312.67     14.62   121.00     86.68%
+  1730 requests in 30.05s, 707.88KB read
+  Socket errors: connect 0, read 0, write 0, timeout 1327
+  Non-2xx or 3xx responses: 1730
+Requests/sec:     57.58
+Transfer/sec:     23.56KB
 ```
 
 ### no proxy bench (8000)
