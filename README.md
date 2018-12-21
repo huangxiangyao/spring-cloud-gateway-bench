@@ -85,11 +85,12 @@ Transfer/sec:    108.24KB
 Running 30s test @ http://localhost:8081/hello.txt
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    12.56ms   13.35ms 195.11ms   86.33%
-    Req/Sec     2.09k   215.10     4.28k    71.81%
-  625781 requests in 30.09s, 123.05MB read
-Requests/sec:  20800.13
-Transfer/sec:      4.09MB
+    Latency   471.78ms  424.48ms   2.00s    79.15%
+    Req/Sec    50.03     30.50   190.00     73.07%
+  12747 requests in 30.10s, 2.00MB read
+  Socket errors: connect 0, read 0, write 0, timeout 234
+Requests/sec:    423.54
+Transfer/sec:     67.98KB
 ```
 
 ### linkerd bench (9990)
@@ -98,11 +99,13 @@ Transfer/sec:      4.09MB
 Running 30s test @ http://localhost:9990/hello.txt
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     7.62ms    5.45ms  53.51ms   69.82%
-    Req/Sec     2.82k   184.58     4.11k    72.17%
-  843418 requests in 30.07s, 186.61MB read
-Requests/sec:  28050.76
-Transfer/sec:      6.21MB
+    Latency    45.32ms   61.21ms 654.76ms   91.49%
+    Req/Sec   670.41    270.20     1.22k    70.04%
+  185546 requests in 30.09s, 7.96MB read
+  Socket errors: connect 0, read 0, write 0, timeout 50
+  Non-2xx or 3xx responses: 185546
+Requests/sec:   6166.46
+Transfer/sec:    270.99KB
 ```
 
 ### RestCloud Gateway bench (8080)
