@@ -7,8 +7,9 @@ Proxy | Avg Latency | Avg Req/Sec/Thread
 -- | -- | -- 
 none | 2.09ms | 11.77k
 gateway | 6.61ms | 3.24k
-linkered | 7.62ms | 2.82k
+linkerd | 7.62ms | 2.82k
 zuul | 12.56ms | 2.09k
+RestCloud | xx.xxms | x.xxk
 
 ## Initial (debian 8)
 1.git clone
