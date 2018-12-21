@@ -72,12 +72,11 @@ $ wrk -t 10 -c 200 -d 30s http://localhost:8082/hello.txt
 Running 30s test @ http://localhost:8082/hello.txt
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.61ms    4.71ms  49.59ms   69.36%
-    Req/Sec     3.24k   278.42     9.02k    75.89%
-  969489 requests in 30.10s, 175.67MB read
-Requests/sec:  32213.38
-Transfer/sec:      5.84MB
-
+    Latency   280.59ms  186.65ms   1.78s    85.30%
+    Req/Sec    85.83     45.56   210.00     61.72%
+  22515 requests in 30.06s, 3.18MB read
+Requests/sec:    748.88
+Transfer/sec:    108.24KB
 ```
 
 ### zuul bench (8081)
