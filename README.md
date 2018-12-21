@@ -112,13 +112,13 @@ Transfer/sec:      6.21MB
 Running 30s test @ http://localhost:8080/restcloud/rest/gateway/hello
   10 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     316ms   477.89ms   1.99s    61.79%
-    Req/Sec   312.67     14.62   121.00     86.68%
-  1730 requests in 30.05s, 707.88KB read
-  Socket errors: connect 0, read 0, write 0, timeout 1327
-  Non-2xx or 3xx responses: 1730
-Requests/sec:     57.58
-Transfer/sec:     23.56KB
+    Latency   406.74ms  517.98ms   2.00s    83.22%
+    Req/Sec    23.73     23.36   330.00     88.55%
+  4788 requests in 30.07s, 1.91MB read
+  Socket errors: connect 0, read 0, write 0, timeout 461
+  Non-2xx or 3xx responses: 4788
+Requests/sec:    159.22
+Transfer/sec:     65.15KB
 ```
 
 ### no proxy bench (8000)
