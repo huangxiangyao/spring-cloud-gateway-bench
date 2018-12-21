@@ -10,6 +10,29 @@ linkered | 7.62ms | 2.82k
 zuul | 12.56ms | 2.09k
 none | 2.09ms | 11.77k
 
+## Initial (debian 8)
+1.git clone
+```
+git clone https://github.com/myvas/spring-cloud-gateway-bench.git
+```
+2.java
+```
+apt-get install default-jre
+```
+3.mvnw
+```
+apt-get install maven
+```
+4.https.protocols
+```
+echo 'export JAVA_TOOL_OPTIONS="-Dhttps.protocols=TLSv1.2"' >> ~/.bashrc
+source ~/.bashrc
+```
+5.wrk
+```
+apt-get install wrk
+```
+
 ## Terminal 1 (simple webserver)
 
 ```bash
