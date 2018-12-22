@@ -138,8 +138,9 @@ Transfer/sec:    278.05KB
 
 # FAQ
 1.kswapd0 is taking a lot of cpu
+In `/etc/sysctl.conf`, try add this line:
 ```
-echo vm.swappiness=0 | sudo tee -a /etc/sysctl.conf
+vm.swappiness = 0
 ```
 See: [https://askubuntu.com/questions/259739/kswapd0-is-taking-a-lot-of-cpu](https://askubuntu.com/questions/259739/kswapd0-is-taking-a-lot-of-cpu)
 
