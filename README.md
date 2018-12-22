@@ -144,4 +144,8 @@ echo vm.swappiness=0 | sudo tee -a /etc/sysctl.conf
 See: [https://askubuntu.com/questions/259739/kswapd0-is-taking-a-lot-of-cpu](https://askubuntu.com/questions/259739/kswapd0-is-taking-a-lot-of-cpu)
 
 2.wrk results "timeout xxx"
-Use `--timeout xx` to spec a larger timeout (in seconds)
+
+Use `--timeout xx` to spec a larger timeout (in seconds), eg.
+```
+wrk -H "Host: web" -t 10 -c 200 -d 30s --timeout 10 http://localhost:8080/gateway/bench/hello.txt
+```
