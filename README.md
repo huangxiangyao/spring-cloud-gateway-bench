@@ -135,3 +135,13 @@ Running 30s test @ http://localhost:8000/hello.txt
 Requests/sec:   1923.78
 Transfer/sec:    278.05KB
 ```
+
+# FAQ
+1.kswapd0 is taking a lot of cpu
+```
+echo vm.swappiness=0 | sudo tee -a /etc/sysctl.conf
+```
+See: [https://askubuntu.com/questions/259739/kswapd0-is-taking-a-lot-of-cpu](https://askubuntu.com/questions/259739/kswapd0-is-taking-a-lot-of-cpu)
+
+2.wrk results "timeout xxx"
+Use `--timeout xx` to spec a larger timeout (in seconds)
